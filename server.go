@@ -41,48 +41,48 @@ func main() {
 
 	proxy := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme: "http",
-		Host:   "localhost:9002",
+		Host:   "localhost-intools:9002",
 	})
 
 	proxy_appAuth_code := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme:  "http",
-		Host:    "localhost:9002",
+		Host:    "localhost-intools:9002",
 		RawPath: "/appauth/code",
 	})
 
 	proxy_common_auth := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme:  "http",
-		Host:    "localhost:9002",
+		Host:    "localhost-intools:9002",
 		RawPath: "/common/auth",
 	})
 
 	proxy_common_v2_auth := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme:  "http",
-		Host:    "localhost:9002",
+		Host:    "localhost-intools:9002",
 		RawPath: "/common/v2/auth",
 	})
 
 	proxy_common_wsauth := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme:  "http",
-		Host:    "localhost:9002",
+		Host:    "localhost-intools:9002",
 		RawPath: "/common/wsauth",
 	})
 
 	proxy_common_token_upload := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme:  "http",
-		Host:    "localhost:9002",
+		Host:    "localhost-intools:9002",
 		RawPath: "/common/token/upload",
 	})
 
 	proxy_login := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme:  "http",
-		Host:    "localhost:9002",
+		Host:    "localhost-intools:9002",
 		RawPath: "/login",
 	})
 
 	proxy_logout := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme:  "http",
-		Host:    "localhost:9002",
+		Host:    "localhost-intools:9002",
 		RawPath: "/logout",
 	})
 
@@ -100,13 +100,13 @@ func main() {
 
 	proxy_mitraApp_saldoMitra := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme:  "http",
-		Host:    "localhost:9002",
+		Host:    "localhost-intools:9003",
 		RawPath: "/mitraapp/saldomitra",
 	})
 
 	proxy_mitraApp_saldoMitra_ajax := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme:  "http",
-		Host:    "localhost:9002",
+		Host:    "localhost-intools:9003",
 		RawPath: "/mitraapp/saldomitra/ajax",
 	})
 
